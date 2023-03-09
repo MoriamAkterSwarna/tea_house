@@ -4,11 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tea House</title>
+
+  <!-- font Awesome kit -->
+  <script src="https://kit.fontawesome.com/e610cb9d54.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind script -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- customize configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+        //   colors: {
+        //     orange: '#FF0000',
+        //   },
+          fontFamily: {
+            manrope:['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
+  <!-- Header Section -->
+  <header class="flex justify-around items-center font-manrope">
+    <div>
+        <h1 class="text-7xl">It's good </h1>
+        <h1 class="text-7xl mt-2">tea time at The</h1>
+        <h1 class="text-7xl mt-2">Tea House</h1>
+        <p class="font-light my-3">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+        <button class="bg-orange-500 px-3 py-2 rounded-lg text-white mt-2">Explore More <i class="fa-solid fa-circle-arrow-right"></i></button>
+    </div>
+    <div class="mt-12">
+        <img src="./images/banner.png" alt="">
+        <div class="bg-white flex items-center -mt-24 ml-20 shadow-2xl w-fit p-3 rounded relative">
+            <div><i class="fa-solid fa-star text-orange-600"></i></div>
+            <div class="ml-2"><h1 class="text-2xl font-bold">5.00</h1>
+            <p class="font-light">Trust Pilot Ratings</p></div>
+        </div>
+    </div>
+  </header>
   </h1>
 </body>
 </html>
